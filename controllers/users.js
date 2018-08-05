@@ -6,7 +6,7 @@ module.exports = {
         const { email, password } = req.value.body;
         const newUser = new user({ email, passwor });
         await newUser.save();
-        res.json({ user: 'created' });
+        res.json({ user: 'created' }); //asd
     },
     signIn: async(req, res, next) => {
         console.log('called signIn()');
